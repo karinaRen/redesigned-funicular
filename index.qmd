@@ -1,12 +1,49 @@
 ---
-   format:
-      html:
-        embed-resources: true
-        main-font: monospace
+
+# Final 
 
 ---
 
-# Final?
+import numpy as np
+import matplotlib as plt
+import pandas as pd
+import sympy
+ 
 
+plt.title("Height vs. She Size Data")
+plt.xlabel("Height (inches)")
+plt.ylabel("Foot/Shoe Size"
+plt.plot(xs,2 * xs)
+
+df = pd.DataFrame(np.array([xs, 2 * xs]).transpose())
+df.columns = ['Height', 'Shoe Size']
+df[["Height", Shoe Size"]]
+	
+Shoe = np.array([
+	[68, 12]
+	[66, 9]
+	[75, 12]
+	[71, 11]
+	[67, 12]
+	[65, 8.5]
+	[67, 9]
+	[75, 13]
+	[72, 13]
+	[74, 12]
+	[72, 12]
+	[75, 12]
+	[69, 10]
+	[70, 11]
+	[65, 10]
+	[64, 8]
+	[68, 9]
+	[73, 11]
+	[70, 8]
+	[76, 12]
+])
+
+
+x, y = sympy.symbols("x y")
+sympy.Eq(y, 0.300402*x - 10.43316)	
 
 ---

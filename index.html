@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Karina Rendon">
+<meta name="dcterms.date" content="2025-11-14">
 
-<title>index</title>
+<title>Final Project ~ College Colloquium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -34,8 +71,37 @@ ul.task-list li input[type="checkbox"] {
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-d1d428847dbc36f2be6ce46a202e3891.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -45,19 +111,169 @@ ul.task-list li input[type="checkbox"] {
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project ~ College Colloquium</h1>
+</div>
 
 
 
-<hr>
-<section id="final" class="level1">
-<h1>Final</h1>
-<hr>
-<p>import numpy as np import matplotlib as plt import pandas as pd import sympy</p>
-<p>plt.title(“Height vs.&nbsp;She Size Data”) plt.xlabel(“Height (inches)”) plt.ylabel(“Foot/Shoe Size” plt.plot(xs,2 * xs)</p>
-<p>df = pd.DataFrame(np.array([xs, 2 * xs]).transpose()) df.columns = [‘Height’, ‘Shoe Size’] df[[“Height”, Shoe Size”]]</p>
-<p>Shoe = np.array([ [68, 12] [66, 9] [75, 12] [71, 11] [67, 12] [65, 8.5] [67, 9] [75, 13] [72, 13] [74, 12] [72, 12] [75, 12] [69, 10] [70, 11] [65, 10] [64, 8] [68, 9] [73, 11] [70, 8] [76, 12]])</p>
-<p>x, y = sympy.symbols(“x y”) sympy.Eq(y, 0.300402*x - 10.43316)</p>
-<hr>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Karina Rendon </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 14, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="thesis" class="level1">
+<h1>Thesis</h1>
+<p>Scientific computing has been very effective for society right now. It is more accurate and it is considered a faster way when trying to solve a complex problem that may be dificult to solve in the “traditional” way. In my opinion, scientific computing is exceptional when trying to efficiently and promptly solve a problelm for a class, one that may be more colpewx and take more time to solve in the way taught in class. Scientific computing can assist students develop analytical thinking skills, because it causes students to think critically about what they are asking the computer to do, in order to get the right answer in the end.</p>
+<p>I will prove my point and support my thesis with a problem from my chemistry class, which involves trying to find the number of neutrons of the first 18 elements given its atomic masses anda tomic numbers. I will use various methods in order to support my thesis, which involve creating a table for my data, a graph in order to display my data, and in addition I will create an equatiion in order to show how important and useful scientific computing is overall.</p>
+</section>
+<section id="goal" class="level1">
+<h1>Goal</h1>
+<ul>
+<li>The goal of this final project is to be able to effectively create a couple of tables with some information about the first 18 elements from the periodic table, a graph to display the relationship between the atomic mass and the number of neutrons, and an equation as an additional way to explain the relationship bettween the elements’ number of neutrons and atomic masses. All of these aspects will help support my thesis, that scientifi ccomputing is very helpful anf effective when having to use it to solve a certain problem</li>
+</ul>
+</section>
+<section id="evidence" class="level1">
+<h1>Evidence</h1>
+<p>In order to suppport my thesis, I will solve my probelm using python in many different ways. 1. First we need to import what will be needed in this project: numpy, sympy, matplotlib, and pandas</p>
+<div id="a9ba0ad6" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li><p>All of these things will help me and facilitate the process when trying to calculatie the average mass of a chemical formula ( examples will be shown later on)</p></li>
+<li><p>Afterwards, I will create some tables in order to be able to make the calculations needed,</p></li>
+</ul>
+<div id="89bec7dd" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>element <span class="op">=</span> np.array([</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Hydrogen"</span>, <span class="st">"Helium"</span>, <span class="st">"Lithium"</span>, <span class="st">"Beryllium"</span>, <span class="st">"Boron"</span>, <span class="st">"Carbon"</span>, <span class="st">"Nitrogen"</span>, <span class="st">"Oxygen"</span>, <span class="st">"Fluorine"</span>, <span class="st">"Neon"</span>, <span class="st">"Sodium"</span>, <span class="st">"Magnesium"</span>, <span class="st">"Aluminum"</span>, <span class="st">"Silicon"</span>, <span class="st">"Phosphorus"</span>, <span class="st">"Sulfur"</span>, <span class="st">"Chlorine"</span>, <span class="st">"Argon"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>symbols <span class="op">=</span> np.array([</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"H"</span>, <span class="st">"He"</span>, <span class="st">"Li"</span>, <span class="st">"Be"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"F"</span>, <span class="st">"Ne"</span>, <span class="st">"Na"</span>, <span class="st">"Mg"</span>, <span class="st">"Al"</span>, <span class="st">"Si"</span>, <span class="st">"P"</span>, <span class="st">"S"</span>, <span class="st">"Cl"</span>, <span class="st">"Ar"</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>atomic_numbers <span class="op">=</span> np.array([</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span>, <span class="st">"7"</span>, <span class="st">"8"</span>, <span class="st">"9"</span>, <span class="st">"10"</span>, <span class="st">"11"</span>, <span class="st">"12"</span>, <span class="st">"13"</span>, <span class="st">"14"</span>, <span class="st">"15"</span>, <span class="st">"16"</span>, <span class="st">"17"</span>, <span class="st">"18"</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>],dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>atomic_numbers <span class="op">=</span> np.arange (<span class="dv">1</span>,<span class="dv">19</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> np.array([ </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1.008"</span>, <span class="st">"4.0026"</span>, <span class="st">"6.94"</span>, <span class="st">"9.0122"</span>, <span class="st">"10.81"</span>, <span class="st">"12.011"</span>, <span class="st">"14.007"</span>, <span class="st">"15.99"</span>, <span class="st">"18.998"</span>, <span class="st">"20.180"</span>, <span class="st">"22.990"</span>, <span class="st">"24.305"</span>, <span class="st">"26.982"</span>, <span class="st">"28.085"</span>, <span class="st">"30.974"</span>, <span class="st">"32.06"</span>, <span class="st">"35.45"</span>, <span class="st">"39.948"</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>], dtype<span class="op">=</span><span class="bu">float</span>) </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> atomic_masses.astype(<span class="bu">float</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>number_of_neutrons <span class="op">=</span> np.subtract(atomic_masses, atomic_numbers)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>neutrons_int <span class="op">=</span> number_of_neutrons.astype(<span class="bu">int</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(number_of_neutrons)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Element"</span>: element, </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Number"</span>: atomic_numbers,    </span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Mass"</span>: atomic_masses,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Neutrons"</span>: neutrons_int</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.to_markdown(index<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>plt.scatter(atomic_numbers, neutrons_int)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Atomic Mass vs. Number of Neutrons"</span>)</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Atomic Mass"</span>)</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Neutrons"</span>)</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"index.png"</span>)</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>os.system(<span class="st">"open index.png"</span>)</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> atomic_numbers.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> atomic_masses</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression().fit(x, y)</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Save slope and intercept</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> model.coef_[<span class="dv">0</span>]</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> model.intercept_</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Display numeric results</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>m,b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[8.0000e-03 2.0026e+00 3.9400e+00 5.0122e+00 5.8100e+00 6.0110e+00
+ 7.0070e+00 7.9900e+00 9.9980e+00 1.0180e+01 1.1990e+01 1.2305e+01
+ 1.3982e+01 1.4085e+01 1.5974e+01 1.6060e+01 1.8450e+01 2.1948e+01]
+| Element    |   Atomic Number |   Atomic Mass |   Neutrons |
+|:-----------|----------------:|--------------:|-----------:|
+| Hydrogen   |               1 |        1.008  |          0 |
+| Helium     |               2 |        4.0026 |          2 |
+| Lithium    |               3 |        6.94   |          3 |
+| Beryllium  |               4 |        9.0122 |          5 |
+| Boron      |               5 |       10.81   |          5 |
+| Carbon     |               6 |       12.011  |          6 |
+| Nitrogen   |               7 |       14.007  |          7 |
+| Oxygen     |               8 |       15.99   |          7 |
+| Fluorine   |               9 |       18.998  |          9 |
+| Neon       |              10 |       20.18   |         10 |
+| Sodium     |              11 |       22.99   |         11 |
+| Magnesium  |              12 |       24.305  |         12 |
+| Aluminum   |              13 |       26.982  |         13 |
+| Silicon    |              14 |       28.085  |         14 |
+| Phosphorus |              15 |       30.974  |         15 |
+| Sulfur     |              16 |       32.06   |         16 |
+| Chlorine   |              17 |       35.45   |         18 |
+| Argon      |              18 |       39.948  |         21 |</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-3-output-2.png" width="808" height="523" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+y = 1.24x - 1
+\]</span></p>
+</section>
+<section id="solution" class="level1">
+<h1>Solution</h1>
+</section>
+<section id="examples" class="level1">
+<h1>Examples</h1>
 </section>
 
 </main>

@@ -11,34 +11,35 @@ format:
 ---
 # Thesis
 
-Scientific computing has been very effective for society right now. It is more accurate and it is considered a faster way when trying to solve a complex problem that may be dificult to solve in the "traditional" way. In my opinion, scientific computing is exceptional when trying to efficiently and promptly solve a problelm for a class, one that may be more colpewx and take more time to solve in the way taught in class. Scientific computing can assist students develop analytical thinking skills, because it causes students to think critically about what they are asking the computer to do, in order to get the right answer in the end.
+Scientific computing has been,and contineus to be, very effective for society. It had advanced to become more accurate and it is considered one of the fastest way when trying to solve a complex problem that may be dificult to solve in the "traditional" way. It is far more cost-efficient, and it can save a lot of time when using its different libraries and functions. With the help of AI, advancements in scientific computing are becoming much more faster and accurate when trying to solve more difficult problems. In my opinion, scientific computing is exceptional when trying to efficiently and promptly solve a problelm for a class, one that may be more complex and take some more time to solve in the way taught in class. Scientific computing can assist students develop better analytical thinking skills, because it causes students to think critically about what they are asking the computer to do, in order to get the right answer in the end in a fast and accurate way.
 
-I will prove my point and support my thesis with a problem from my chemistry class, which involves trying to find the number of neutrons of the first 18 elements given its atomic masses anda tomic numbers. I will use various methods in order to support my thesis, which involve creating a table for my data, a graph in order to display my data, and in addition I will create an equatiion in order to show how important and useful scientific computing is overall.    
+I will prove my point and support my thesis with a problem from my chemistry class, which involves trying to find the number of neutrons of the first 18 elements from the periodic table, given their individual atomic masses and atomic numbers. I will use various methods in order to support my thesis, which involve creating a table for my data, a graph in order to display my data, and in addition I will create an equatiion in order to show how important and useful scientific computing is overall. In this project, I chose to work with a quite simple problem, and the reason for this is because it will be much easier to get my point across and still be able to show how effective and precise scientific computing is.    
 
 # Goal 
-- The goal of this final project is to be able to effectively create a couple of tables with some information about the first 18 elements from the periodic table, a graph to display the relationship between the atomic mass and the number of neutrons, and an equation as an additional way to explain the relationship bettween the elements' number of neutrons and atomic masses. All of these aspects will help support my thesis, that scientifi ccomputing is very helpful anf effective when having to use it to solve a certain problem   
+- The goal of this final project is to be able to successfully create a table with some information about the first 18 elements from the periodic table, a graph to display the relationship between the atomic mass and the number of neutrons in an organized way, and an equation as an additional way to explain the relationship found bettween the elements' number of neutrons and atomic masses. All of these aspects will help support my thesis, that scientific ccomputing is very helpful, accurate, and essential when having to use it to solve a certain problem.   
  
 # Evidence
-In order to suppport my thesis, I will solve my probelm using python in many different ways.
-1. First we need to import what will be needed in this project: numpy, sympy, matplotlib, and pandas
+In order to suppport my thesis, I will solve my probelm using Python in many different ways, and they will all show how effective it is to use python, which will show how great and important scientific computing is to our modern world. 
+
+##### Importing Essentials
+First I will need to import what will be needed in this project: NumPy, SymPy, Matplotlib, Pandas, and Os
+
 ```{python}
 import numpy as np
+from sklearn.linear_model import LinearRegression
 import sympy
-import matplotlib as plt
-import pandas as pd
-```
-- All of these things will help me and facilitate the process when trying to calculatie the average mass of a chemical formula ( examples will be shown later on)  
-
-- Afterwards, I will create some tables in order to be able to make the calculations needed,
-
-``` {python}
-import numpy as np
-from sklearn.linear_model import LinearRegression 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 import os
+```
+These "scientific computing libraries" used withing Python show important and easy-to-use scientific computing is. For example, **NumPy** helps the user create arrays in order to display many different types of data in an organized manner; **SymPy** allows the useage of mathematical symbols, without the need to assign numerical values to each individual variable; **Matplotlib** helps create visualizations in Python, which may be many different types of graphs such as pie charts, scatter plots, bar charts, line plots, histograms, bok plots (box-and-Whisker plots) Stem plots, and many more; **Pandas** helps with creating certain data structures, like DataFrames and Series, which are extremely helpful with working with structured data values; lastly, **os**, which when imported, it allows us do everything we do in the shell without having to leave Python.    
 
+##### Arrays & Tables
+The next step is to write some code in order to create a well-organized table with the information that is desired, with the help of NumPy and Pandas of course :)
 
+- The use of the code "np.array" helps me create tables that are easy to understand to the viewer, and with the help of Pandas, it allows and assists the arrays to be formated in a way that looks more "sophisticated".
+ 
+```{python}
 element = np.array([
 	"Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon"
 ])
@@ -51,8 +52,6 @@ atomic_numbers = np.array([
 	"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18"
 ],dtype=float)
 
-atomic_numbers = np.arange (1,19)
-
 
 atomic_masses = np.array([ 
 	"1.008", "4.0026", "6.94", "9.0122", "10.81", "12.011", "14.007", "15.99", "18.998", "20.180", "22.990", "24.305", "26.982", "28.085", "30.974", "32.06", "35.45", "39.948"
@@ -64,46 +63,68 @@ number_of_neutrons = np.subtract(atomic_masses, atomic_numbers)
 
 neutrons_int = number_of_neutrons.astype(int)
 
+np.set_printoptions(suppress=True)
 print(number_of_neutrons)
 
 df = pd.DataFrame({
 	"Element": element, 
+	"Symbol": symbols,
 	"Atomic Number": atomic_numbers,	
 	"Atomic Mass": atomic_masses,
 	"Neutrons": neutrons_int
 })
 
 print(df.to_markdown(index=False))
+```
+- DataFrames allows us to create a well-organized and easy-to-read table, with perfect columns and rows, all labeled and filled in as necessary. This makes it easy for the viewer to easily find a identify a specific element, without having to get confused about what represents what. 
 
-plt.figure(figsize=(10,6))
+- As you can see, scientific computing, with the help of NumPy and Pandas, it assisted us in creating a well-organized table with all of the desired information (Element Name, Element Symbol, Atomic Number, Atomic Mass, and Neurons). The list of numbers above the array are the number of neutrons calculated by Python. The calculation of the number of neutrons in the first 18 elemnets of the periodic table was done with the following piece of code:
 
+```{python}
+number_of_neutrons = np.subtract(atomic_masses, atomic_numbers)
+```
+- This piece of code took the atomic numbers of the 18 elements and subtracted it from the atomic masses of the elements listed. The table shown rounds the number of neutrons calculated, while in the list above, it takes the atomic number from the element and subtracts it from the exact mass number. In the list, the reason that the number of neutrons are not whoel numbers is because the atomic mass of the element sis the average weight of the elements, and it is all the naturally occuring isotopes of the elements. The use of scientific computing made it easier for me to be able to quickly solve and find how many neutrons each element has. This can be done with all of the elements present in the perodic table, but for the sake of making this project short and concise, I only decided to show the first 18 chemical elements in order to be able to easily get my point across.
+
+##### Graphs
+After, I will be using Matplotlib in order to be able to create a graph, showing the relationship between the atomic masses and the number of neutrons that was found for the 18 chemical elements. Each different line of code helps with a certain part of the graph, such as the title of the graph, they x & y axis labels, and the type of graph (this example is a scatter plot). The use of "os" helps with opening the graph in a separate window, which helps the viewer take a closer look at the graph.
+```{python}
 plt.scatter(atomic_numbers, neutrons_int)
-
 plt.title("Atomic Mass vs. Number of Neutrons")
 plt.xlabel("Atomic Mass")
 plt.ylabel("Number of Neutrons")
 plt.savefig("index.png")
 os.system("open index.png")
-
-
-# Fit the model
-x = atomic_numbers.reshape(-1, 1)
-y = atomic_masses
-model = LinearRegression().fit(x, y)
-
-# Save slope and intercept
-m = model.coef_[0]
-b = model.intercept_
-
-# Display numeric results
-m,b
 ```
-$$
-y = 1.24x - 1
-$$
+- As seen in the graph, each point represnts an elements from the table. We can come to the conclusion that the heavier elements tend to have more neutrons, whole the lighter chemical elements tend to ahve a smaller amount of neutrons. The graph shows the relationship between the atomic mass and the number of neutrons is not quite liner, and this is because many of the elements from the period tables have numerous isotopes, each with different number of neutrons. Nevertheless, the use of a linear trend is the most accurate because it captures the general trend. Scientific computing helps us see this trend/pattern right away, without having to graph each value manually by hand, which would take much longer. 
+- The use of Matplotlib helps create a nice visual, where we can easily distinguish the relationship between the atomic mass and the number of neutronsfor the elements listed. We can assume that this is true for all 118 elements on the periodic table, but if desired, we can extend the arrays above to include all of the elements and see if the pattern continues. Thanks to Matplotlib, we can say that as the atomic mass of the elements increases, so does the number of neutrons. Scientific computing can help us be able to easily interpret a set of data, and this can assist us with any problem we would like.
 
+##### Equation
+```{python}
 
-# Solution
+x, y = sympy.symbols("x y") 
 
-# Examples
+eq = sympy.Eq(y, 1.24 * x - 1)
 
+eq
+```
+- The general format of a liner equation is _y = mx + b _, which represents a function that is growing with a constant rate of change. Although the data displayed on the graph doesn't grow in a linear manner perfectly, a linear regression line is still considered the best tool that clearly shows the relationship between the x and y variables (Atomic Mass & Number of Neutrons).
+
+- With the help of  **LaTeX** and **SymPy**, this equation was able to easily be created, which represets the linear regression line that all of the data will fall into. The importance of the equation in this case is that it shows that there is a clear, postitive, and linear relationship between the atomic masses and the number of neutrons for the 18 elements: As the atomic mass of the 18 chemical elements increases, so does the number of neutrons.  Because of scientic computing and knowing how to corrrectly use LaTex, it facillitates me when trying to display an equation in a way that can be easy-to-read and understand. Although the equation isn't very complex in this case, on my website it is still formated in a way that is comprehensible for the reader/viewer. LaTex and Sympy can allow the user to write more complex equations with more advance mathematical symbols, and this makes it more simple when having to write more complex equations or formulas. 
+
+# Conclusion
+To conclude, scientific computing is still very useful and important to our world, it is what helps many people be able to suceessfully analyze data, and create new algorithims in order to solve new curiosities and wonders, and also to overall it is a powerfull to in order to be able to run simulations and experiments, in a way that will much faster and more accurate.
+
+Although scientific computing is very useful and accurate, it is important to recognize and consider its limitaions as well. One limitation of scientific computing is that it will only run correctly if the user writees the code sin the correct format. If it a piece of code is written in the wrong way, the computer will detect the error and tell the user where the mistake is found. This can be both time-consuming and misleading, because it may be difficult when having to find what went wrong and figure out the correct format or code. This means that the user needs to have a clear understanding of what they are asking the electronic device to calculate, in order to be able to get it right the first time. However, the benefits of scientific computing far outweigh the limitations. As long as it is done correctly, scientific computing is by far the most effective, important, and accurate when it comes to solving complex problems.
+
+In the case of using scientific computing as a current college student, using everything that scientific computing has to offer can help me in any math-related classes that I plan to take throughout my 4 years here at Willamette. In the case that I take another chemistry class in the near future, I now know how to have Python assist me in finding a specific piece of information very quickly. This project itself can accurately help me find the number of neutrons in any of the chemical elements from the periodic table, all I would have to do is make my arrays longer and add the necessary information from the rest of the chemical elements, and Python will help me solve for the neutrons for the remaining elements.
+
+Overall, scientific computing is both good and very important, it is an easy tool that can help with solving any type of problems in a quick manner. There are many other scientific computing libraries that can be installed to Python, and some maybe be more useful than other depending on gth ecomplexity of the problem. But in general, to be able to solve a mathematical problem through Python, all you have to do is learn the basics and it will soon become the most accurate tool that you will ever use.
+
+##### Reflection
+Overall, I believe that I was successful in being able to provide enough evidence and explanation in order to support my thesis that I stated in the beginning of my projects. Although I used the same problem that I had used in my midterm, I was now able to further explain how and why I used the scientific computing libraries, and was able to support my claim that scientific computing in general is very useful and good. Some struggles that I bumped into while working on my final project for this class were that I was having trouble correctly formatting the equation, because it was not appearing the way I desired. However, I was finally able to correctly have it displayed on my website the way I wanted it to. Also, I was having some trouble having Python correctly subtract the atomic number from the atomic mass. I ran into the same struggle in my midterm as well, but I was easily able to have Python solve for the number of neutrons found in the 18 elements.
+
+If I were to add on to this project, I would look into more depth the idea and topic of isotopes, because this is a concept that interests me, and I would like to see if the isotopes of the elements have any relationship with the atomic masses or the number of neutrons. It would be an interesting discovery overall. 
+
+If I could do a different project, I would do what many others in the class are doing: an atomic mass calculator. This would be interesting to do because it would allow me to easily calculate the average atomic mass of a variety of chemical formulas, like caffeine (C8H10N4O2), glucose (C6H12O6), or vinegar/acetic acid (C2H3O2). It would be a long process, but this could help me in the future when having to quickly find the average atomic mass of a certain element or chemical formula.
+
+Thank you so much for taking the time to read my website and my whole project in general :)

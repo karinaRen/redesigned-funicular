@@ -144,136 +144,166 @@ window.Quarto = {
 
 <section id="thesis" class="level1">
 <h1>Thesis</h1>
-<p>Scientific computing has been very effective for society right now. It is more accurate and it is considered a faster way when trying to solve a complex problem that may be dificult to solve in the “traditional” way. In my opinion, scientific computing is exceptional when trying to efficiently and promptly solve a problelm for a class, one that may be more colpewx and take more time to solve in the way taught in class. Scientific computing can assist students develop analytical thinking skills, because it causes students to think critically about what they are asking the computer to do, in order to get the right answer in the end.</p>
-<p>I will prove my point and support my thesis with a problem from my chemistry class, which involves trying to find the number of neutrons of the first 18 elements given its atomic masses anda tomic numbers. I will use various methods in order to support my thesis, which involve creating a table for my data, a graph in order to display my data, and in addition I will create an equatiion in order to show how important and useful scientific computing is overall.</p>
+<p>Scientific computing has been,and contineus to be, very effective for society. It had advanced to become more accurate and it is considered one of the fastest way when trying to solve a complex problem that may be dificult to solve in the “traditional” way. It is far more cost-efficient, and it can save a lot of time when using its different libraries and functions. With the help of AI, advancements in scientific computing are becoming much more faster and accurate when trying to solve more difficult problems. In my opinion, scientific computing is exceptional when trying to efficiently and promptly solve a problelm for a class, one that may be more complex and take some more time to solve in the way taught in class. Scientific computing can assist students develop better analytical thinking skills, because it causes students to think critically about what they are asking the computer to do, in order to get the right answer in the end in a fast and accurate way.</p>
+<p>I will prove my point and support my thesis with a problem from my chemistry class, which involves trying to find the number of neutrons of the first 18 elements from the periodic table, given their individual atomic masses and atomic numbers. I will use various methods in order to support my thesis, which involve creating a table for my data, a graph in order to display my data, and in addition I will create an equatiion in order to show how important and useful scientific computing is overall. In this project, I chose to work with a quite simple problem, and the reason for this is because it will be much easier to get my point across and still be able to show how effective and precise scientific computing is.</p>
 </section>
 <section id="goal" class="level1">
 <h1>Goal</h1>
 <ul>
-<li>The goal of this final project is to be able to effectively create a couple of tables with some information about the first 18 elements from the periodic table, a graph to display the relationship between the atomic mass and the number of neutrons, and an equation as an additional way to explain the relationship bettween the elements’ number of neutrons and atomic masses. All of these aspects will help support my thesis, that scientifi ccomputing is very helpful anf effective when having to use it to solve a certain problem</li>
+<li>The goal of this final project is to be able to successfully create a table with some information about the first 18 elements from the periodic table, a graph to display the relationship between the atomic mass and the number of neutrons in an organized way, and an equation as an additional way to explain the relationship found bettween the elements’ number of neutrons and atomic masses. All of these aspects will help support my thesis, that scientific ccomputing is very helpful, accurate, and essential when having to use it to solve a certain problem.</li>
 </ul>
 </section>
 <section id="evidence" class="level1">
 <h1>Evidence</h1>
-<p>In order to suppport my thesis, I will solve my probelm using python in many different ways. 1. First we need to import what will be needed in this project: numpy, sympy, matplotlib, and pandas</p>
-<div id="a9ba0ad6" class="cell" data-execution_count="1">
+<p>In order to suppport my thesis, I will solve my probelm using Python in many different ways, and they will all show how effective it is to use python, which will show how great and important scientific computing is to our modern world.</p>
+<section id="importing-essentials" class="level5">
+<h5 class="anchored" data-anchor-id="importing-essentials">Importing Essentials</h5>
+<p>First I will need to import what will be needed in this project: NumPy, SymPy, Matplotlib, Pandas, and Os</p>
+<div id="fc939f48" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>These “scientific computing libraries” used withing Python show important and easy-to-use scientific computing is. For example, <strong>NumPy</strong> helps the user create arrays in order to display many different types of data in an organized manner; <strong>SymPy</strong> allows the useage of mathematical symbols, without the need to assign numerical values to each individual variable; <strong>Matplotlib</strong> helps create visualizations in Python, which may be many different types of graphs such as pie charts, scatter plots, bar charts, line plots, histograms, bok plots (box-and-Whisker plots) Stem plots, and many more; <strong>Pandas</strong> helps with creating certain data structures, like DataFrames and Series, which are extremely helpful with working with structured data values; lastly, <strong>os</strong>, which when imported, it allows us do everything we do in the shell without having to leave Python.</p>
+</section>
+<section id="arrays-tables" class="level5">
+<h5 class="anchored" data-anchor-id="arrays-tables">Arrays &amp; Tables</h5>
+<p>The next step is to write some code in order to create a well-organized table with the information that is desired, with the help of NumPy and Pandas of course :)</p>
+<ul>
+<li>The use of the code “np.array” helps me create tables that are easy to understand to the viewer, and with the help of Pandas, it allows and assists the arrays to be formated in a way that looks more “sophisticated”.</li>
+</ul>
+<div id="2dbc0c55" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>element <span class="op">=</span> np.array([</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Hydrogen"</span>, <span class="st">"Helium"</span>, <span class="st">"Lithium"</span>, <span class="st">"Beryllium"</span>, <span class="st">"Boron"</span>, <span class="st">"Carbon"</span>, <span class="st">"Nitrogen"</span>, <span class="st">"Oxygen"</span>, <span class="st">"Fluorine"</span>, <span class="st">"Neon"</span>, <span class="st">"Sodium"</span>, <span class="st">"Magnesium"</span>, <span class="st">"Aluminum"</span>, <span class="st">"Silicon"</span>, <span class="st">"Phosphorus"</span>, <span class="st">"Sulfur"</span>, <span class="st">"Chlorine"</span>, <span class="st">"Argon"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>symbols <span class="op">=</span> np.array([</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"H"</span>, <span class="st">"He"</span>, <span class="st">"Li"</span>, <span class="st">"Be"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"F"</span>, <span class="st">"Ne"</span>, <span class="st">"Na"</span>, <span class="st">"Mg"</span>, <span class="st">"Al"</span>, <span class="st">"Si"</span>, <span class="st">"P"</span>, <span class="st">"S"</span>, <span class="st">"Cl"</span>, <span class="st">"Ar"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>atomic_numbers <span class="op">=</span> np.array([</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span>, <span class="st">"7"</span>, <span class="st">"8"</span>, <span class="st">"9"</span>, <span class="st">"10"</span>, <span class="st">"11"</span>, <span class="st">"12"</span>, <span class="st">"13"</span>, <span class="st">"14"</span>, <span class="st">"15"</span>, <span class="st">"16"</span>, <span class="st">"17"</span>, <span class="st">"18"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>],dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> np.array([ </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1.008"</span>, <span class="st">"4.0026"</span>, <span class="st">"6.94"</span>, <span class="st">"9.0122"</span>, <span class="st">"10.81"</span>, <span class="st">"12.011"</span>, <span class="st">"14.007"</span>, <span class="st">"15.99"</span>, <span class="st">"18.998"</span>, <span class="st">"20.180"</span>, <span class="st">"22.990"</span>, <span class="st">"24.305"</span>, <span class="st">"26.982"</span>, <span class="st">"28.085"</span>, <span class="st">"30.974"</span>, <span class="st">"32.06"</span>, <span class="st">"35.45"</span>, <span class="st">"39.948"</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>], dtype<span class="op">=</span><span class="bu">float</span>) </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> atomic_masses.astype(<span class="bu">float</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>number_of_neutrons <span class="op">=</span> np.subtract(atomic_masses, atomic_numbers)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>neutrons_int <span class="op">=</span> number_of_neutrons.astype(<span class="bu">int</span>)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>np.set_printoptions(suppress<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(number_of_neutrons)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Element"</span>: element, </span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Symbol"</span>: symbols,</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Number"</span>: atomic_numbers,    </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Mass"</span>: atomic_masses,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Neutrons"</span>: neutrons_int</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.to_markdown(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[ 0.008   2.0026  3.94    5.0122  5.81    6.011   7.007   7.99    9.998
+ 10.18   11.99   12.305  13.982  14.085  15.974  16.06   18.45   21.948 ]
+| Element    | Symbol   |   Atomic Number |   Atomic Mass |   Neutrons |
+|:-----------|:---------|----------------:|--------------:|-----------:|
+| Hydrogen   | H        |               1 |        1.008  |          0 |
+| Helium     | He       |               2 |        4.0026 |          2 |
+| Lithium    | Li       |               3 |        6.94   |          3 |
+| Beryllium  | Be       |               4 |        9.0122 |          5 |
+| Boron      | B        |               5 |       10.81   |          5 |
+| Carbon     | C        |               6 |       12.011  |          6 |
+| Nitrogen   | N        |               7 |       14.007  |          7 |
+| Oxygen     | O        |               8 |       15.99   |          7 |
+| Fluorine   | F        |               9 |       18.998  |          9 |
+| Neon       | Ne       |              10 |       20.18   |         10 |
+| Sodium     | Na       |              11 |       22.99   |         11 |
+| Magnesium  | Mg       |              12 |       24.305  |         12 |
+| Aluminum   | Al       |              13 |       26.982  |         13 |
+| Silicon    | Si       |              14 |       28.085  |         14 |
+| Phosphorus | P        |              15 |       30.974  |         15 |
+| Sulfur     | S        |              16 |       32.06   |         16 |
+| Chlorine   | Cl       |              17 |       35.45   |         18 |
+| Argon      | Ar       |              18 |       39.948  |         21 |</code></pre>
+</div>
 </div>
 <ul>
-<li><p>All of these things will help me and facilitate the process when trying to calculatie the average mass of a chemical formula ( examples will be shown later on)</p></li>
-<li><p>Afterwards, I will create some tables in order to be able to make the calculations needed,</p></li>
+<li><p>DataFrames allows us to create a well-organized and easy-to-read table, with perfect columns and rows, all labeled and filled in as necessary. This makes it easy for the viewer to easily find a identify a specific element, without having to get confused about what represents what.</p></li>
+<li><p>As you can see, scientific computing, with the help of NumPy and Pandas, it assisted us in creating a well-organized table with all of the desired information (Element Name, Element Symbol, Atomic Number, Atomic Mass, and Neurons). The list of numbers above the array are the number of neutrons calculated by Python. The calculation of the number of neutrons in the first 18 elemnets of the periodic table was done with the following piece of code:</p></li>
 </ul>
-<div id="89bec7dd" class="cell" data-execution_count="2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>element <span class="op">=</span> np.array([</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Hydrogen"</span>, <span class="st">"Helium"</span>, <span class="st">"Lithium"</span>, <span class="st">"Beryllium"</span>, <span class="st">"Boron"</span>, <span class="st">"Carbon"</span>, <span class="st">"Nitrogen"</span>, <span class="st">"Oxygen"</span>, <span class="st">"Fluorine"</span>, <span class="st">"Neon"</span>, <span class="st">"Sodium"</span>, <span class="st">"Magnesium"</span>, <span class="st">"Aluminum"</span>, <span class="st">"Silicon"</span>, <span class="st">"Phosphorus"</span>, <span class="st">"Sulfur"</span>, <span class="st">"Chlorine"</span>, <span class="st">"Argon"</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>])</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>symbols <span class="op">=</span> np.array([</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"H"</span>, <span class="st">"He"</span>, <span class="st">"Li"</span>, <span class="st">"Be"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"N"</span>, <span class="st">"O"</span>, <span class="st">"F"</span>, <span class="st">"Ne"</span>, <span class="st">"Na"</span>, <span class="st">"Mg"</span>, <span class="st">"Al"</span>, <span class="st">"Si"</span>, <span class="st">"P"</span>, <span class="st">"S"</span>, <span class="st">"Cl"</span>, <span class="st">"Ar"</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>])</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>atomic_numbers <span class="op">=</span> np.array([</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1"</span>, <span class="st">"2"</span>, <span class="st">"3"</span>, <span class="st">"4"</span>, <span class="st">"5"</span>, <span class="st">"6"</span>, <span class="st">"7"</span>, <span class="st">"8"</span>, <span class="st">"9"</span>, <span class="st">"10"</span>, <span class="st">"11"</span>, <span class="st">"12"</span>, <span class="st">"13"</span>, <span class="st">"14"</span>, <span class="st">"15"</span>, <span class="st">"16"</span>, <span class="st">"17"</span>, <span class="st">"18"</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>],dtype<span class="op">=</span><span class="bu">float</span>)</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>atomic_numbers <span class="op">=</span> np.arange (<span class="dv">1</span>,<span class="dv">19</span>)</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> np.array([ </span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1.008"</span>, <span class="st">"4.0026"</span>, <span class="st">"6.94"</span>, <span class="st">"9.0122"</span>, <span class="st">"10.81"</span>, <span class="st">"12.011"</span>, <span class="st">"14.007"</span>, <span class="st">"15.99"</span>, <span class="st">"18.998"</span>, <span class="st">"20.180"</span>, <span class="st">"22.990"</span>, <span class="st">"24.305"</span>, <span class="st">"26.982"</span>, <span class="st">"28.085"</span>, <span class="st">"30.974"</span>, <span class="st">"32.06"</span>, <span class="st">"35.45"</span>, <span class="st">"39.948"</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>], dtype<span class="op">=</span><span class="bu">float</span>) </span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>atomic_masses <span class="op">=</span> atomic_masses.astype(<span class="bu">float</span>)</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>number_of_neutrons <span class="op">=</span> np.subtract(atomic_masses, atomic_numbers)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>neutrons_int <span class="op">=</span> number_of_neutrons.astype(<span class="bu">int</span>)</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(number_of_neutrons)</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Element"</span>: element, </span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Number"</span>: atomic_numbers,    </span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Atomic Mass"</span>: atomic_masses,</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Neutrons"</span>: neutrons_int</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.to_markdown(index<span class="op">=</span><span class="va">False</span>))</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>plt.scatter(atomic_numbers, neutrons_int)</span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Atomic Mass vs. Number of Neutrons"</span>)</span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Atomic Mass"</span>)</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Neutrons"</span>)</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"index.png"</span>)</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>os.system(<span class="st">"open index.png"</span>)</span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> atomic_numbers.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> atomic_masses</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression().fit(x, y)</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Save slope and intercept</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> model.coef_[<span class="dv">0</span>]</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> model.intercept_</span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Display numeric results</span></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>m,b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[8.0000e-03 2.0026e+00 3.9400e+00 5.0122e+00 5.8100e+00 6.0110e+00
- 7.0070e+00 7.9900e+00 9.9980e+00 1.0180e+01 1.1990e+01 1.2305e+01
- 1.3982e+01 1.4085e+01 1.5974e+01 1.6060e+01 1.8450e+01 2.1948e+01]
-| Element    |   Atomic Number |   Atomic Mass |   Neutrons |
-|:-----------|----------------:|--------------:|-----------:|
-| Hydrogen   |               1 |        1.008  |          0 |
-| Helium     |               2 |        4.0026 |          2 |
-| Lithium    |               3 |        6.94   |          3 |
-| Beryllium  |               4 |        9.0122 |          5 |
-| Boron      |               5 |       10.81   |          5 |
-| Carbon     |               6 |       12.011  |          6 |
-| Nitrogen   |               7 |       14.007  |          7 |
-| Oxygen     |               8 |       15.99   |          7 |
-| Fluorine   |               9 |       18.998  |          9 |
-| Neon       |              10 |       20.18   |         10 |
-| Sodium     |              11 |       22.99   |         11 |
-| Magnesium  |              12 |       24.305  |         12 |
-| Aluminum   |              13 |       26.982  |         13 |
-| Silicon    |              14 |       28.085  |         14 |
-| Phosphorus |              15 |       30.974  |         15 |
-| Sulfur     |              16 |       32.06   |         16 |
-| Chlorine   |              17 |       35.45   |         18 |
-| Argon      |              18 |       39.948  |         21 |</code></pre>
+<div id="7d117fe2" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>number_of_neutrons <span class="op">=</span> np.subtract(atomic_masses, atomic_numbers)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li>This piece of code took the atomic numbers of the 18 elements and subtracted it from the atomic masses of the elements listed. The table shown rounds the number of neutrons calculated, while in the list above, it takes the atomic number from the element and subtracts it from the exact mass number. In the list, the reason that the number of neutrons are not whoel numbers is because the atomic mass of the element sis the average weight of the elements, and it is all the naturally occuring isotopes of the elements. The use of scientific computing made it easier for me to be able to quickly solve and find how many neutrons each element has. This can be done with all of the elements present in the perodic table, but for the sake of making this project short and concise, I only decided to show the first 18 chemical elements in order to be able to easily get my point across.</li>
+</ul>
+</section>
+<section id="graphs" class="level5">
+<h5 class="anchored" data-anchor-id="graphs">Graphs</h5>
+<p>After, I will be using Matplotlib in order to be able to create a graph, showing the relationship between the atomic masses and the number of neutrons that was found for the 18 chemical elements. Each different line of code helps with a certain part of the graph, such as the title of the graph, they x &amp; y axis labels, and the type of graph (this example is a scatter plot). The use of “os” helps with opening the graph in a separate window, which helps the viewer take a closer look at the graph.</p>
+<div id="46f93780" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(atomic_numbers, neutrons_int)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Atomic Mass vs. Number of Neutrons"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Atomic Mass"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Neutrons"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"index.png"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>os.system(<span class="st">"open index.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>0</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/cell-3-output-2.png" width="808" height="523" class="figure-img"></p>
+<p><img src="index_files/figure-html/cell-5-output-2.png" width="585" height="449" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><span class="math display">\[
-y = 1.24x - 1
-\]</span></p>
+<ul>
+<li>As seen in the graph, each point represnts an elements from the table. We can come to the conclusion that the heavier elements tend to have more neutrons, whole the lighter chemical elements tend to ahve a smaller amount of neutrons. The graph shows the relationship between the atomic mass and the number of neutrons is not quite liner, and this is because many of the elements from the period tables have numerous isotopes, each with different number of neutrons. Nevertheless, the use of a linear trend is the most accurate because it captures the general trend. Scientific computing helps us see this trend/pattern right away, without having to graph each value manually by hand, which would take much longer.</li>
+<li>The use of Matplotlib helps create a nice visual, where we can easily distinguish the relationship between the atomic mass and the number of neutronsfor the elements listed. We can assume that this is true for all 118 elements on the periodic table, but if desired, we can extend the arrays above to include all of the elements and see if the pattern continues. Thanks to Matplotlib, we can say that as the atomic mass of the elements increases, so does the number of neutrons. Scientific computing can help us be able to easily interpret a set of data, and this can assist us with any problem we would like.</li>
+</ul>
 </section>
-<section id="solution" class="level1">
-<h1>Solution</h1>
+<section id="equation" class="level5">
+<h5 class="anchored" data-anchor-id="equation">Equation</h5>
+<div id="703db229" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x, y <span class="op">=</span> sympy.symbols(<span class="st">"x y"</span>) </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>eq <span class="op">=</span> sympy.Eq(y, <span class="fl">1.24</span> <span class="op">*</span> x <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>eq</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="9">
+<p><span class="math inline">\(\displaystyle y = 1.24 x - 1\)</span></p>
+</div>
+</div>
+<ul>
+<li><p>The general format of a liner equation is <em>y = mx + b </em>, which represents a function that is growing with a constant rate of change. Although the data displayed on the graph doesn’t grow in a linear manner perfectly, a linear regression line is still considered the best tool that clearly shows the relationship between the x and y variables (Atomic Mass &amp; Number of Neutrons).</p></li>
+<li><p>With the help of <strong>LaTeX</strong> and <strong>SymPy</strong>, this equation was able to easily be created, which represets the linear regression line that all of the data will fall into. The importance of the equation in this case is that it shows that there is a clear, postitive, and linear relationship between the atomic masses and the number of neutrons for the 18 elements: As the atomic mass of the 18 chemical elements increases, so does the number of neutrons. Because of scientic computing and knowing how to corrrectly use LaTex, it facillitates me when trying to display an equation in a way that can be easy-to-read and understand. Although the equation isn’t very complex in this case, on my website it is still formated in a way that is comprehensible for the reader/viewer. LaTex and Sympy can allow the user to write more complex equations with more advance mathematical symbols, and this makes it more simple when having to write more complex equations or formulas.</p></li>
+</ul>
 </section>
-<section id="examples" class="level1">
-<h1>Examples</h1>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>To conclude, scientific computing is still very useful and important to our world, it is what helps many people be able to suceessfully analyze data, and create new algorithims in order to solve new curiosities and wonders, and also to overall it is a powerfull to in order to be able to run simulations and experiments, in a way that will much faster and more accurate.</p>
+<p>Although scientific computing is very useful and accurate, it is important to recognize and consider its limitaions as well. One limitation of scientific computing is that it will only run correctly if the user writees the code sin the correct format. If it a piece of code is written in the wrong way, the computer will detect the error and tell the user where the mistake is found. This can be both time-consuming and misleading, because it may be difficult when having to find what went wrong and figure out the correct format or code. This means that the user needs to have a clear understanding of what they are asking the electronic device to calculate, in order to be able to get it right the first time. However, the benefits of scientific computing far outweigh the limitations. As long as it is done correctly, scientific computing is by far the most effective, important, and accurate when it comes to solving complex problems.</p>
+<p>In the case of using scientific computing as a current college student, using everything that scientific computing has to offer can help me in any math-related classes that I plan to take throughout my 4 years here at Willamette. In the case that I take another chemistry class in the near future, I now know how to have Python assist me in finding a specific piece of information very quickly. This project itself can accurately help me find the number of neutrons in any of the chemical elements from the periodic table, all I would have to do is make my arrays longer and add the necessary information from the rest of the chemical elements, and Python will help me solve for the neutrons for the remaining elements.</p>
+<p>Overall, scientific computing is both good and very important, it is an easy tool that can help with solving any type of problems in a quick manner. There are many other scientific computing libraries that can be installed to Python, and some maybe be more useful than other depending on gth ecomplexity of the problem. But in general, to be able to solve a mathematical problem through Python, all you have to do is learn the basics and it will soon become the most accurate tool that you will ever use.</p>
+<section id="reflection" class="level5">
+<h5 class="anchored" data-anchor-id="reflection">Reflection</h5>
+<p>Overall, I believe that I was successful in being able to provide enough evidence and explanation in order to support my thesis that I stated in the beginning of my projects. Although I used the same problem that I had used in my midterm, I was now able to further explain how and why I used the scientific computing libraries, and was able to support my claim that scientific computing in general is very useful and good. Some struggles that I bumped into while working on my final project for this class were that I was having trouble correctly formatting the equation, because it was not appearing the way I desired. However, I was finally able to correctly have it displayed on my website the way I wanted it to. Also, I was having some trouble having Python correctly subtract the atomic number from the atomic mass. I ran into the same struggle in my midterm as well, but I was easily able to have Python solve for the number of neutrons found in the 18 elements.</p>
+<p>If I were to add on to this project, I would look into more depth the idea and topic of isotopes, because this is a concept that interests me, and I would like to see if the isotopes of the elements have any relationship with the atomic masses or the number of neutrons. It would be an interesting discovery overall.</p>
+<p>If I could do a different project, I would do what many others in the class are doing: an atomic mass calculator. This would be interesting to do because it would allow me to easily calculate the average atomic mass of a variety of chemical formulas, like caffeine (C8H10N4O2), glucose (C6H12O6), or vinegar/acetic acid (C2H3O2). It would be a long process, but this could help me in the future when having to quickly find the average atomic mass of a certain element or chemical formula.</p>
+<p>Thank you so much for taking the time to read my website and my whole project in general :)</p>
+</section>
 </section>
 
 </main>
